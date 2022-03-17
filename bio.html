@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#444444">
+    <link rel="shortcut icon" type="image/png" href="files/favicon.png" sizes="180x180">
+    <title>YhosetArt</title>
+    <link rel="preload" href="fonts/Righteous-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-MediumItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220317224924">
+    <script deffer src="js/script.min.js?_v=20220317224924"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header not-scroll" id="home">
+        <div class="header__container container"><a class="logo" href="#">YhosetArt</a>
+          <nav class="nav" data-nav>
+            <ul class="nav__list list-reset">
+              <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="bio.html">Bio</a></li>
+              <li class="nav__item"><a class="nav__link" href="gallery.html">My Gallery</a></li>
+              <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+              <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+              <li class="nav__item">
+                <button class="theme btn-reset">
+                  <svg class="theme__svg dark" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#sun"></use>
+                  </svg>
+                  <svg class="theme__svg light" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#luna"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger><span class="burger__line"></span></button>
+        </div>
+      </header>
+      <main class="page">
+        <section class="section hero"><picture><source srcset="img/pixels.webp" type="image/webp"><img class="hero__pixels" src="img/pixels.jpg" alt="pixels image" aria-hidden="true" draggable="false"></picture>
+          <div class="hero__hawk hero__hawk_start hero__hawk_contact">
+            <div class="hero__box hero__box_flex hero__box_bio container">
+              <div class="hero__bio">
+                <h2 class="subtitle color-title">My Biography</h2>
+                <p class="text">«Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.»<br><br> «Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.» <br><br> «Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.»</p>
+              </div>
+              <div class="hero__bio-min"><picture><source srcset="img/myphotoTest.webp" type="image/webp"><img class="hero__myphoto" src="img/myphotoTest.jpg" alt="my photo"></picture>
+                <p class="text">«Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquan proist laborum.»</p><picture><source srcset="img/test1.webp" type="image/webp"><img class="hero__bio-img" src="img/test1.jpg" alt="image"></picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer__container">
+          <ul class="social list-reset" title="social networks">
+            <li class="social__item"><a class="social__link social__link--fb" href="#" target="_blank" aria-label="facebook">
+                <svg aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--vk" href="#" target="_blank" aria-label="vk">
+                <svg aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link social__link--in" href="#" target="_blank" aria-label="instagram">
+                <svg aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#insta"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="footer__bottom"><a class="footer__bottom-link" href="https://www.instagram.com/_veter_n/" target="_blank" aria-label="project developer">2022 ©<span class="color-red"> Nazar Shypot</span></a></div>
+      </footer>
+    </div>
+  </body>
+</html>
