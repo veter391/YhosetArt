@@ -3229,6 +3229,16 @@ p {
     line-height: 1.5em;
     margin-right: 15px;
   }
+
+  .modal__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .gallery__btn::before {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3281,6 +3291,15 @@ p {
   .blog__date {
     font-size: 0.9em;
   }
+
+  .modal__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8em;
+  }
+
+  .gallery__btn_pages {
+    height: 200px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -3299,6 +3318,18 @@ p {
 
   .nav {
     min-width: 100%;
+  }
+
+  .gallery__top {
+    -ms-grid-rows: (minmax(auto, 130px))[4];
+    grid-template-rows: repeat(4, minmax(auto, 130px));
+  }
+
+  .modal__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 60px;
   }
 }
 
