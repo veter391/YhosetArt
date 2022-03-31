@@ -3297,6 +3297,10 @@ p {
     margin-bottom: 0.8em;
   }
 
+  .text {
+    text-align: left;
+  }
+
   .gallery__btn_pages {
     height: 200px;
   }
