@@ -3301,6 +3301,9 @@ p {
     text-align: left;
   }
 
+  .no-webp .hero__hawk{
+    background-image: url("../img/heroMobile.jpg"); }
+
   .gallery__btn_pages {
     height: 200px;
   }
@@ -3338,3 +3341,8 @@ p {
 }
 
 .webp .hero__hawk{ background-image: url(../img/hero.webp); }
+
+@media (max-width: 600px){
+
+  .webp .hero__hawk{ background-image: url(../img/heroMobile.webp); }
+}
