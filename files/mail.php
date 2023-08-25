@@ -34,14 +34,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'nazarsipot@gmail.com'; // Логин на почте
-    $mail->Password   = 'qaipcxdyfewjsmce'; // Пароль на почте
+    $mail->Username   = 'mail@gmail.com'; // Логин на почте
+    $mail->Password   = 'wqeqweqweq'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('nazarsipot@gmail.com', 'YhosetArt'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('client@gmail.com', 'YhosetArt'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('nazarcova391@gmail.com');
+    $mail->addAddress('client@gmail.com');
     // $mail->addAddress('youremail@yandex.ru');  // Ещё один, если нужен
 
     // Прикрипление файлов к письму
