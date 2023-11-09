@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="theme-color" content="#444444")
+    meta(name="description" content="Gallery page")
+
+    link(rel="shortcut icon" type="image/png" href="files/favicon.png" sizes="180x180")
+    title YhosetArt
+    //- fonts
+    link(rel="preload" href="fonts/Righteous-Regular.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-BoldItalic.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-MediumItalic.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin)
+    //- styles
+    link(rel="stylesheet", href="css/style.min.css")
+    //- scripts
+    script(deffer src="js/script.min.js")
+
+    //- noscript //- if script is not support
+    //-   style .simplebar-content-wrapper {overflow: auto;}
+  body
+    div.wrapper
+      include html/header
+      main.page
+        section.section.hero
+          img.hero__pixels.lazy(data-src="@img/pixels.jpg" alt="pixels image" aria-hidden="true" draggable="false" )
+          .hero__hawk.hero__hawk_start.hero__hawk_contact
+            .hero__box.hero__box_flex.hero__box_bio.container
+              .hero__bio
+                h2.subtitle.color-title My Biography
+                p.text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." <br><br> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              .hero__bio-min
+                img.lazy.hero__myphoto(data-src="@img/myphotoTest.jpg", alt="my photo")
+                p.text "Lorem ipsum dolor sit  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquan proist laborum."
+                img.lazy.hero__bio-img(data-src="@img/test1.jpg", alt="image")
+      include html/footer
+
+

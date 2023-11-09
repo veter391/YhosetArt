@@ -1,0 +1,99 @@
+.header {
+  position: relative;
+  min-height: 100px;
+  padding: calc(em(29) - 3px) 0;
+  border-bottom: 3px solid transparent;
+  box-sizing: border-box;
+  background-color: var(--dark-theme);
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+  }
+}
+.theme {
+  width: 28px;
+  height: 28px;
+  &__svg {
+    width: 28px;
+    height: 28px;
+    stroke:var(--light-theme);
+    fill: var(--light-theme);
+    transition-property: stroke,fill;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+  &.focus-visible,&:hover {
+    .theme__svg {
+      stroke:$red;
+      fill: $red;
+    }
+  }
+  &:active {
+    .theme__svg {
+      stroke:$red-dark;
+      fill: $red-dark;
+    }
+  }
+}
+
+.nav {
+  transition-property: transform;
+  transition-duration:0;
+  transition-timing-function: ease;
+  display: grid;
+  grid-template-columns: minmax(auto,800px);
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+  }
+  &__item:not(:last-child){
+    margin-right: 15px;
+  }
+  &__link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    font-size: rem(18);
+    font-weight: 600;
+    line-height: easem(21,18);
+    letter-spacing: 0.16em;
+    transition: color .3s ease;
+    &::before {
+      position: absolute;
+      text-align: center;
+      height: 2px;
+      width: 100%;
+      content: '';
+      bottom: 0;
+      left: 0;
+      border-radius: 5px;
+      background-color: $red;
+      transform: scaleX(0);
+      transition-property: transform,background;
+      transition-duration: .3s;
+      transition-timing-function: ease;
+    }
+    &.focus-visible,
+    &:hover {
+      color:$red;
+      &::before {
+        transform: none;
+      }
+    }
+    &:active {
+      color:$red-dark;
+      &::before {
+        background-color: $red-dark;
+      }
+    }
+  }
+}
+

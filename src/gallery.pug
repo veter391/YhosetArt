@@ -1,0 +1,126 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="theme-color" content="#444444")
+    meta(name="description" content="Gallery page")
+    link(rel="shortcut icon" type="image/png" href="files/favicon.png" sizes="180x180")
+    title YhosetArt
+    //- fonts
+    link(rel="preload" href="fonts/Righteous-Regular.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-BoldItalic.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-MediumItalic.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin)
+    //- styles
+    link(rel="stylesheet", href="css/style.min.css")
+    //- scripts
+    script(deffer src="js/script.min.js")
+
+    //- noscript //- if script is not support
+    //-   style .simplebar-content-wrapper {overflow: auto;}
+  body
+    div.wrapper
+      include html/header
+      main.page
+        section.section.hero.hero_gallery
+          img.lazy.hero__pixels(data-src="@img/pixels.jpg" alt="pixels image" aria-hidden="true" draggable="false" )
+          .hero__hawk.hero__hawk_start
+            .hero__box.hero__box_padding.hero__box_flex.container
+              .gallery
+                h2.subtitle.color-title My Gallery
+                .swiper.gallery__swiper
+                  button.swiper-button-prev.gallery__btn-prev
+                  button.swiper-button-next.gallery__btn-next
+                  .swiper-wrapper
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_top(data-path="first" data-animation="skew-right-left" data-description="My Description1").swiper-slide.gallery__slide
+                      img.gallery__slide-img(src="@img/test2.jpg", alt="slider image")
+                      span.is-hidden Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident assumenda ab sit ratione odio, dolore enim quidem unde impedit? Doloribus, dignissimos ducimus odio nulla sed animi aperiam eos, iusto numquam tempora voluptates eaque, amet quis placeat. Minima natus corrupti repudiandae tempora consequuntur voluptates eveniet consectetur delectus, id quos unde veritatis quam laudantium voluptate quaerat, quisquam tempore placeat incidunt numquam autem sed officia ipsa. Et debitis eum qui facere quis asperiores? Vitae obcaecati fugit optio nesciunt harum incidunt, sunt velit accusamus maxime eum repellat exercitationem, amet laudantium nobis corporis a numquam inventore porro voluptates animi distinctio rerum, corrupti minima nulla. Dolorum, autem officiis tempora suscipit quibusdam rerum accusantium iure perferendis, nemo quo reiciendis in harum voluptatum? Perferendis quos, quae itaque dolorum doloribus officia animi est vitae magnam sapiente neque dolore quidem blanditiis ad alias? Minus ad cupiditate quisquam neque! Quod ullam facilis quasi ducimus? Quia incidunt nostrum totam perspiciatis enim ea tempora in, veniam tempore explicabo, aspernatur vero eius voluptate exercitationem, animi modi similique. Doloremque natus et dolorum quod blanditiis officia impedit eligendi eum, ad qui unde ab ratione repellendus quas voluptate est. Voluptatibus recusandae impedit, quis molestiae necessitatibus corrupti harum hic sequi in fugiat perspiciatis id perferendis dignissimos, quisquam neque eius aliquid consectetur. Harum quis odit perferendis at cum quae nulla quasi saepe suscipit nihil eius, consequatur praesentium eum enim. Adipisci iure voluptatibus, optio accusantium non minus id animi voluptatem ullam at voluptate, quaerat delectus voluptates incidunt similique sunt harum. Voluptatum assumenda totam cupiditate! Eos enim laborum cumque explicabo ut natus obcaecati ipsa accusamus. Repellat saepe aliquid, magnam, sit, tempore quidem quisquam eum commodi neque possimus accusamus provident autem aspernatur voluptate! Dicta quam deserunt, omnis iure incidunt quo? Nemo iste tempora delectus illo eveniet blanditiis enim veritatis magni, ipsa, sit voluptates ullam ea autem labore dolore soluta quod cupiditate? Accusamus.
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_top(data-path="first" data-animation="skew-right-left" data-description="My Description2").swiper-slide.gallery__slide
+                      img.gallery__slide-img(src="@img/test3.jpg", alt="slider image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime numquam provident amet aperiam culpa voluptate? Voluptate excepturi dicta quo corrupti omnis, iste, distinctio quas at culpa molestiae accusamus saepe. Neque nihil facere corrupti illo praesentium quas aspernatur similique facilis illum! Nihil vel optio consequuntur? Et, non sequi consectetur mollitia quos quo maxime atque praesentium modi totam nostrum placeat quod beatae odit pariatur accusamus minus. Unde et esse tenetur voluptate eos minus, vero dolorem amet magni aut exercitationem laboriosam incidunt temporibus aspernatur similique itaque. Facere qui asperiores necessitatibus maiores illo? Atque, reiciendis asperiores, suscipit consequatur corrupti expedita magnam nostrum quod quas hic reprehenderit? Illo quo quas fuga necessitatibus. Dolor ratione dolores minima facilis eaque repudiandae quia velit illum voluptas, inventore, fugiat qui vero, dolore magni recusandae accusamus voluptates. Natus adipisci obcaecati quia! Dolorum reiciendis quia doloremque quaerat repellat quis ipsam nulla illo neque fugit temporibus omnis accusamus, adipisci rerum earum minus expedita quod, magnam itaque aspernatur vel possimus, amet nam saepe? Ipsam tenetur officia porro voluptatibus doloremque. Magnam voluptate nesciunt doloremque nam nobis obcaecati nemo laborum deleniti, rem repellendus veniam. Ipsum officia pariatur reprehenderit unde vitae, libero, asperiores non aut eum aliquid eaque beatae numquam quisquam reiciendis praesentium error! Maxime.
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_top(data-path="first" data-animation="skew-right-left" data-description="My Description3").swiper-slide.gallery__slide
+                      img.gallery__slide-img(src="@img/test1.jpg", alt="slider image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam in iusto ipsam porro, veritatis fugiat nesciunt ut facilis, nam aspernatur totam quibusdam enim consectetur quia. Error cum sapiente sit deleniti dolorem autem deserunt vitae. Repudiandae dolores illo, soluta veritatis nam architecto distinctio, vero quod commodi totam vel id quam animi quasi quibusdam in ratione. Quod voluptatem porro est quisquam unde molestiae amet beatae et omnis repellat ratione vel magni ullam nihil temporibus dolore, minima, impedit, esse pariatur aut aliquid? Nam magnam temporibus eveniet quibusdam vero earum nihil ratione mollitia officia, amet sapiente quam facilis debitis possimus exercitationem vel! Cumque?
+                .gallery__top
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-1(data-path="first" data-description="My Description111" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test1.jpg", alt="top 1 image")
+                    span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-2(data-path="first" data-description="My Description222" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test2.jpg", alt="top 2 image")
+                    span.is-hidden Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis tempora odit consequatur deleniti saepe a similique excepturi, nesciunt blanditiis maiores? Quia accusamus, eveniet dolorem obcaecati eligendi error exercitationem! Corrupti necessitatibus fugiat ea reiciendis quidem rerum quisquam aut, non maxime suscipit eveniet aliquid deleniti ducimus saepe accusantium tempora optio consequuntur. Ad, minus. Esse, tenetur. Quisquam, mollitia.
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-3(data-path="first" data-description="My Description333" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test1.jpg", alt="top 3 image")
+                    span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-4(data-path="first" data-description="My Description444" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test1.jpg", alt="top 4 image")
+                    span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum soluta hic unde magni sunt quis!
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-5(data-path="first" data-description="My Description555" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test2.jpg", alt="top 5 image")
+                    span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur inventore beatae sint!
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-6(data-path="first" data-description="My Description666" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test2.jpg", alt="top 6 image")
+                    span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga atque repudiandae hic!
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-7(data-path="first" data-description="My Description777" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test1.jpg", alt="top 7 image")
+                    span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia laudantium nostrum natus voluptatem minus?
+                  button.btn-reset.modal-btn.gallery__btn.gallery__top-8(data-path="first" data-description="My Description888" data-animation="skew-right-left")
+                    img.lazy.gallery__top-img(data-src="@img/test2.jpg", alt="top 8 image")
+                    span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem veritatis quibusdam natus laboriosam aliquid labore?
+                button.btn-reset.btn(data-more) View all works
+                .filter
+                  h3.filter__title Filters :
+                  ul.filter__list.list-reset
+                    li.filter__item
+                      button.btn-reset.btn.filter__btn.filter__btn--active All
+                    li.filter__item
+                      button.btn-reset.btn.filter__btn Watercolors
+                    li.filter__item
+                      button.btn-reset.btn.filter__btn Llapis
+                    li.filter__item
+                      button.btn-reset.btn.filter__btn Pintura
+                    li.filter__item
+                      button.btn-reset.btn.filter__btn Others
+                  .pages
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description1")
+                      img.lazy.pages-img(data-src="@img/test2.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description2")
+                      img.lazy.pages-img(data-src="@img/test1.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description3")
+                      img.lazy.pages-img(data-src="@img/test3.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description4")
+                      img.lazy.pages-img(data-src="@img/test1.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description5")
+                      img.lazy.pages-img(data-src="@img/test1.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description6")
+                      img.lazy.pages-img(data-src="@img/test1.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description7")
+                      img.lazy.pages-img(data-src="@img/test1.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description8")
+                      img.lazy.pages-img(data-src="@img/test1.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+                    button.btn-reset.modal-btn.gallery__btn.gallery__btn_pages(data-path="first" data-animation="skew-right-left" data-description="My Description9")
+                      img.lazy.pages-img(data-src="@img/test1.jpg", alt="image")
+                      span.is-hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dolores facilis? Reprehenderit nulla labore autem dolore ad recusandae earum!
+
+      include html/footer
+    .modal
+      .modal__container(role="dialog" aria-modal="true" data-target="first")
+        button.btn-reset.modal__close(aria-label="Закрыть модальное окно")
+        .modal__content
+          picture.modal__picture
+            source(data-srcset="@img/test1.webp" type="image/webp")
+            img.lazy.modal__img(data-src="@img/test1.jpg", alt="top 2 image")
+          .modal__textBox
+            h2.modal__title.subtitle.color-title My Description
+            p.text.modal__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis cupiditate est et earum quae, nisi repellendus assumenda soluta natus delectus.

@@ -1,0 +1,39 @@
+.filter{
+  display: none;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-auto-rows: auto;
+    @include adaptive("grid-column-gap", 30 ,15, 0);
+    @include adaptive("grid-row-gap", 20 ,10, 0);
+    @include adaptive("margin-bottom", 40 ,25, 0);
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: rem(20);
+    font-weight: 600;
+    line-height: easem(20,20);
+    letter-spacing: 0.18em;
+    text-align: left;
+  }
+  &__btn {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  &-img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+header.header#home.not-scroll
+  .header__container.container
+    a.logo(href="#") YhosetArt
+    nav.nav(data-nav)
+      ul.nav__list.list-reset
+        li.nav__item
+          a.nav__link.nav__link--active(href="index.html") Home
+        li.nav__item
+          a.nav__link(href="bio.html") Bio
+        li.nav__item
+          a.nav__link(href="gallery.html") My Gallery
+        li.nav__item
+          a.nav__link(href="blog.html") Blog
+        li.nav__item
+          a.nav__link(href="contact.html") Contact
+        li.nav__item
+          button.theme.btn-reset(aria-label="theme")
+            svg(aria-hidden="true").theme__svg.dark
+              use(xlink:href="img/sprite.svg#sun")
+            svg(aria-hidden="true").theme__svg.light
+              use(xlink:href="img/sprite.svg#luna")
+    button.burger(aria-label="Открыть меню" aria-expanded="false"  data-burger)
+      span.burger__line
+
+

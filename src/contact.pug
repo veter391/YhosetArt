@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="theme-color" content="#444444")
+    meta(name="description" content="Gallery page")
+    link(rel="shortcut icon" type="image/png" href="files/favicon.png" sizes="180x180")
+    title YhosetArt
+    //- fonts
+    link(rel="preload" href="fonts/Righteous-Regular.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-BoldItalic.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-MediumItalic.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin)
+    //- styles
+    link(rel="stylesheet", href="css/style.min.css")
+    //- scripts
+    script(deffer src="js/script.min.js")
+  body
+    div.wrapper
+      include html/header
+      main.page
+        section.section.hero.hero_gallery
+          img.lazy.hero__pixels(data-src="@img/pixels.jpg" alt="pixels image" aria-hidden="true" draggable="false" )
+          .hero__hawk.hero__hawk_start
+            .hero__box.hero__box_padding.container
+              .contact
+                h2.subtitle.color-title Contact My
+                form.form#form(action="#" method="POST" enctype="multipart/form-data")
+                  label.form__label
+                    input.input-reset.form__input#name(type="text" name="name" placeholder="Name")
+                  label.form__label
+                    input.input-reset.form__input#email(type="text" name="email" placeholder="E-mail")
+                  label.form__label
+                    textarea.form__textarea#message(name="message" placeholder="Your message")
+                  button.btn.btn-reset.form__btn(type="submit") Send message
+      include html/footer
